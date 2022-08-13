@@ -1,0 +1,267 @@
+@keyframes progress1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes progress2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes progress3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes showRole1 {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  60% { opacity: 0;}
+  100% {
+    left: 4%;
+    opacity: 1;
+  }
+}
+
+@keyframes showRole2 {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  60% { opacity: 0;}
+  100% {
+    left: 4%;
+    opacity: 1;
+  }
+}
+
+@keyframes showIncome1 {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    left: 62%;
+    opacity: 1;
+  }
+}
+
+@keyframes showIncome2 {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    left: 102%;
+    opacity: 1;
+  }
+}
+
+.roleWrapper {
+  display: flex;
+  flex-flow: column;
+  @media (min-width: 1024px) {
+    padding: 32px;
+    border-radius: 8px;
+  }
+}
+
+.roleTop {
+  display: grid;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  @media (min-width: 1024px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.roleTopLeft {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.roleTopRight {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 40px;
+}
+
+.roleBottom {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 16px;
+  @media (min-width: 1024px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background: none;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bars {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  @media (min-width: 600px) {
+    width: 480px;
+  }
+  @media (min-width: 1024px) {
+    width: 400px;
+  }
+}
+
+.barGroup {
+  position: relative;
+  height: 50px;
+}
+
+.bar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  border-radius: 4px;
+  background-color: black;
+  animation: progress1 0.6s cubic-bezier(0.4, 0, 1, 1) 0.3s forwards;
+}
+
+.bar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  border-radius: 4px;
+  background-color: rgba(0,85,208,1);
+  animation: progress2 0.6s cubic-bezier(0.4, 0, 1, 1) 0.3s forwards;
+}
+
+.bar3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  border-radius: 4px;
+  background: linear-gradient(149deg, rgba(0,86,210,0.8) 0%, rgba(0,85,208,1) 24%, rgba(0,26,168,1) 100%);
+  animation: progress3 .8s cubic-bezier(0.4, 0, 1, 1) 0.3s forwards;
+}
+
+.barLabel1 {
+  position: absolute;
+  top: 14px;
+  left: -100px;
+  white-space: nowrap;
+  animation: showRole1 0.8s ease forwards;
+}
+
+.barLabel2 {
+  position: absolute;
+  top: 14px;
+  left: -100px;
+  white-space: nowrap;
+  animation: showRole2 0.8s ease forwards;
+}
+
+.barIncome1 {
+  position: absolute;
+  top: 14px;
+  left: -100px;
+  animation: showIncome1 0.4s ease 0.6s forwards;
+}
+
+.barIncome2 {
+  position: absolute;
+  top: 14px;
+  left: -100px;
+  animation: showIncome2 0.4s ease 0.9s forwards;
+}
+
+
+// Tabs
+.tabs {
+  position: relative;
+  display: flex;
+  height: 40px;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: all 0.3s ease;
+}
+
+.tabsBorderBottom {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.glider {
+  position: absolute;
+  height: 2px;
+  width: 118px;
+  bottom: 0px;
+  z-index: 1;
+  transform: translateX(0);
+  transition: transform 0.3s cubic-bezier(0.39, 1.11, 0.7, 1.01);
+}

@@ -1,0 +1,14 @@
+/* Font */
+$font: "Source Sans Pro", arial, sans-serif;
+$display-2: 600 44px/53px "Source Sans Pro", arial, sans-serif;
+$h1-semibold: 600 28px/36px "Source Sans Pro", arial, sans-serif;
+$h1-semibold-sm: 600 24px/32px "Source Sans Pro", arial, sans-serif;
+$h2: 700 20px/28px "Source Sans Pro", arial, sans-serif;
+$h2-semibold: 600 20px/28px "Source Sans Pro", arial, sans-serif;
+$h2-normal: 400 20px/28px "Source Sans Pro", arial, sans-serif;
+$h3: 700 16px/24px "Source Sans Pro", arial, sans-serif;
+$h3-semibold: 600 16px/24px "Source Sans Pro", arial, sans-serif;
+$h4: 700 14px/20px "Source Sans Pro", arial, sans-serif;
+$h4-semibold: 600 14px/20px "Source Sans Pro", arial, sans-serif;
+$body14: 400 14px/20px "Source Sans Pro", arial, sans-serif;
+$body16: 400 16px/24px "Source Sans Pro", arial, sans-serif;
