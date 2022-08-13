@@ -49,8 +49,6 @@ export default function Main(props) {
         {/* <BannerOrgSocialProof /> */}
       </Container>
 
-
-
       {/* <Role /> */}
       <RoleV2 />
 
@@ -64,8 +62,11 @@ export default function Main(props) {
 
       {/* Social proof */}
       <Section bgColor={theme.palette.white}>
-        <Container css={{position: "relative", display: "flex", overflow: "hidden" }} lg>
-          <img src={socialProof} css={{width: "100%"}}/>
+        <Container
+          css={{ position: "relative", display: "flex", overflow: "hidden" }}
+          lg
+        >
+          <img src={socialProof} css={{ width: "100%" }} />
         </Container>
       </Section>
       {/* <CareerAcademy /> */}
@@ -75,6 +76,7 @@ export default function Main(props) {
       {/* <PopularCourses /> */}
       {/* <FilteredResults2 /> */}
       {/* <CollegeDegree /> */}
+      <div>test</div>
     </main>
   );
 }
